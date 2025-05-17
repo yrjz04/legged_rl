@@ -1,0 +1,16 @@
+controllers:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 200
+
+  rl_controller:
+    type: legged/RLController
+    frequency: 50
+
+  static_controller:
+    type: legged/StaticController
+    frequency: 50
+
+  collect_controller:
+    type: legged/CollectController
+    frequency: 50   # should be the same as the frequency of the rl_controller

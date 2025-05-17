@@ -1,0 +1,24 @@
+<library path="lib/liblegged_rl_controller">
+
+    <class name="legged/RLController" type="legged::rl::RLController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The rl controller.
+        </description>
+    </class>
+
+    <class name="legged/StaticController" type="legged::StaticController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The static controller.
+        </description>
+    </class>
+
+    <class name="legged/CollectController" type="legged::CollectController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The controller used to collect data.
+        </description>
+    </class>
+
+</library>
